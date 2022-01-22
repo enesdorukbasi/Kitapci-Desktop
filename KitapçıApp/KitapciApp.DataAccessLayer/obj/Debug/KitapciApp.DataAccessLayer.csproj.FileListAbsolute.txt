@@ -1,0 +1,14 @@
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\KitapciApp.DataAccessLayer.dll.config
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\KitapciApp.DataAccessLayer.dll
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\KitapciApp.DataAccessLayer.pdb
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\KitapciApp.EntityLayer.dll
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\KitapciApp.EntityLayer.pdb
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\obj\Debug\KitapciApp.DataAccessLayer.csprojAssemblyReference.cache
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\obj\Debug\KitapciApp.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\obj\Debug\KitapciApp.DataAccessLayer.csproj.CopyComplete
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\obj\Debug\KitapciApp.DataAccessLayer.dll
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.DataAccessLayer\obj\Debug\KitapciApp.DataAccessLayer.pdb

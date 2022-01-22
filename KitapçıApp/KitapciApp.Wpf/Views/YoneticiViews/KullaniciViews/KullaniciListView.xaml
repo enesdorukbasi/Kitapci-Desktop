@@ -1,0 +1,52 @@
+﻿<Page x:Class="KitapciApp.Wpf.Views.YoneticiViews.KullaniciViews.KullaniciListView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:KitapciApp.Wpf.Views.YoneticiViews.KullaniciViews"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Kullanıcı Listesi">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}"
+                  IsReadOnly="True" SelectionMode="Single" SelectionUnit="FullRow">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Adı" Binding="{Binding Ad}"/>
+                <DataGridTextColumn Header="Soyadı" Binding="{Binding Soyad}"/>
+                <DataGridTextColumn Header="Kullanıcı No" Binding="{Binding KullanıcıNo}"/>
+                <DataGridTextColumn Header="Yetki" Binding="{Binding Yetki}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding RefreshCommand}" ToolTip="Yenile">
+                <materialDesign:PackIcon Kind="Refresh" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding InsertCommand}" ToolTip="Ekle">
+                <materialDesign:PackIcon Kind="AccountMultiplePlus" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding DeleteCommand}" CommandParameter="{Binding SelectedItem}" ToolTip="Sil">
+                <materialDesign:PackIcon Kind="AccountMultipleMinus" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding UpdateCommand}" CommandParameter="{Binding SelectedItem}" ToolTip="Güncelle">
+                <materialDesign:PackIcon Kind="AccountEdit" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Page>

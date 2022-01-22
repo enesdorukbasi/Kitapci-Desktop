@@ -1,0 +1,36 @@
+﻿<Window x:Class="KitapciApp.Wpf.Views.YoneticiViews.SatısDetayViews.SatısDetayListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:KitapciApp.Wpf.Views.YoneticiViews.SatısDetayViews"
+        mc:Ignorable="d"
+        Title="Satış Detay Listesi" Height="450" Width="800" Language="tr-TR" WindowStyle="None" ResizeMode="NoResize">
+    <Border Padding="10" BorderThickness="2.5" BorderBrush="#170db3" MouseDown="Border_MouseDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <DataGrid AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      SelectionUnit="FullRow"
+                      ItemsSource="{Binding Items}"
+                      SelectedItem="{Binding SelectedItem}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Satıs Id" Binding="{Binding SatısId}"/>
+                    <DataGridTextColumn Header="Kitap" Binding="{Binding Kitap.KitapAd}"/>
+                    <DataGridTextColumn Header="Adet" Binding="{Binding Adet}"/>
+                    <DataGridTextColumn Header="Tutar" Binding="{Binding Tutar, StringFormat=C2}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button x:Name="btnKapat" Content="X" Background="#170db3" HorizontalAlignment="Right"
+                    Click="btnKapat_Click" Grid.Row="1"/>
+        </Grid>
+    </Border>
+</Window>

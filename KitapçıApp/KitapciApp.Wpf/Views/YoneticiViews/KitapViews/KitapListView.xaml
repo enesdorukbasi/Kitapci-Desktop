@@ -1,0 +1,52 @@
+﻿<Page x:Class="KitapciApp.Wpf.Views.YoneticiViews.KitapViews.KitapListView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:KitapciApp.Wpf.Views.YoneticiViews.KitapViews"
+      mc:Ignorable="d" Language="tr-TR"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Kitap Listesi">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" AutoGenerateColumns="False" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}"
+                  IsReadOnly="True" SelectionMode="Single" SelectionUnit="FullRow">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Barkod" Binding="{Binding Barkod}"/>
+                <DataGridTextColumn Header="Kitap Adı" Binding="{Binding Ad}"/>
+                <DataGridTextColumn Header="Yazar" Binding="{Binding Yazar}"/>
+                <DataGridTextColumn Header="Tür" Binding="{Binding Tur.Ad}"/>
+                <DataGridTextColumn Header="Adet" Binding="{Binding Adet}"/>
+                <DataGridTextColumn Header="Fiyat" Binding="{Binding Fiyat, StringFormat=C2}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding RefreshCommand}" ToolTip="Yenile">
+                <materialDesign:PackIcon Kind="Refresh" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding InsertCommand}" ToolTip="Ekle">
+                <materialDesign:PackIcon Kind="BookPlusMultiple" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding DeleteCommand}" CommandParameter="{Binding SelectedItem}" ToolTip="Sil">
+                <materialDesign:PackIcon Kind="BookMinusMultiple" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+
+            <Button Background="White" BorderBrush="#170db3" BorderThickness="2" Margin="5 0"
+                    Command="{Binding UpdateCommand}" CommandParameter="{Binding SelectedItem}" ToolTip="Güncelle">
+                <materialDesign:PackIcon Kind="BookEdit" Width="25" Height="25" Foreground="#170db3"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

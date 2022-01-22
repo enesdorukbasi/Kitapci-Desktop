@@ -1,0 +1,20 @@
+﻿KitapciApp.Wpf
+
+
+winexe
+C#
+.cs
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.Wpf\obj\Debug\
+KitapciApp.Wpf
+none
+false
+DEBUG;TRACE
+D:\Okul\Ödev\4.Dönem\Görsel Programlama 3\09.05.2021\KitapçıApp\KitapciApp.Wpf\App.xaml
+13869733907
+
+30491349545
+20705128051
+Views\LoginView\LoginView.xaml;Views\MainViews\SaticiMainView.xaml;Views\MainViews\YoneticiMainView.xaml;Views\SaticiViews\KitapViews\KitapListView.xaml;Views\YoneticiViews\KitapViews\KitapListView.xaml;Views\YoneticiViews\KitapViews\KitapView.xaml;Views\YoneticiViews\KullaniciViews\KullaniciListView.xaml;Views\YoneticiViews\KullaniciViews\KullaniciView.xaml;Views\YoneticiViews\SatisViews\SatisView.xaml;Views\YoneticiViews\SatisViews\SatısListView.xaml;Views\YoneticiViews\SatısDetayViews\SatısDetayListView.xaml;Views\YoneticiViews\TurViews\TurListView.xaml;Views\YoneticiViews\TurViews\TurView.xaml;
+
+True
+
